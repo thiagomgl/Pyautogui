@@ -1,0 +1,31 @@
+2026-05-15 18:55:11 [INFO] Iniciando automação
+2026-05-15 18:55:11 [INFO] Verifique se o formulário está aberto e visível na tela.
+2026-05-15 18:55:13 [INFO] Processando registro 1/5: Ana Silva
+2026-05-15 18:55:18 [ERROR] Erro durante a automação: PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED.
+Traceback (most recent call last):
+  File "c:\Users\Casa\OneDrive\Documents\Projetos\AutoFlowApp\automacao.py", line 137, in executar_automacao
+    preencher_formulario(nome, email, telefone, endereco)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Casa\OneDrive\Documents\Projetos\AutoFlowApp\automacao.py", line 103, in preencher_formulario
+    escrever(endereco)
+    ~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Casa\OneDrive\Documents\Projetos\AutoFlowApp\automacao.py", line 61, in escrever
+    pyautogui.write(str(texto), interval=interval)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Casa\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pyautogui\__init__.py", line 594, in wrapper
+    returnVal = wrappedFunction(*args, **kwargs)
+  File "C:\Users\Casa\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pyautogui\__init__.py", line 1687, in typewrite
+    failSafeCheck()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\Casa\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pyautogui\__init__.py", line 1734, in failSafeCheck
+    raise FailSafeException(
+        "PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED."
+    )
+pyautogui.FailSafeException: PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED.
+2026-05-15 18:55:18 [WARNING] Falha ao salvar screenshot: PyAutoGUI was unable to import pyscreeze. (This is likely because you're running a version of Python that Pillow (which pyscreeze depends on) doesn't support currently.) Please install this module to enable the function you tried to call.
+2026-05-15 19:06:08 [INFO] Iniciando automação
+2026-05-15 19:06:08 [INFO] Verifique se o formulário está aberto e visível na tela.
+2026-05-15 19:06:10 [INFO] Processando registro 1/5: Ana Silva
+2026-05-15 19:06:17 [WARNING] Falha ao salvar screenshot: PyAutoGUI was unable to import pyscreeze. (This is likely because you're running a version of Python that Pillow (which pyscreeze depends on) doesn't support currently.) Please install this module to enable the function you tried to call.
+2026-05-15 19:06:21 [INFO] Processando registro 2/5: Bruno Costa
+2026-05-15 19:06:28 [WARNING] Falha ao salvar screenshot: PyAutoGUI was unable to import pyscreeze. (This is likely because you're running a version of Python that Pillow (which pyscreeze depends on) doesn't support currently.) Please install this module to enable the function you tried to call.
